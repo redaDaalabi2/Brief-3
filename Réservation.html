@@ -31,8 +31,7 @@
     <!-- end header -->
     <!-- start content -->
     <div class="Container">
-            <br> 
-            <label class="label-1" for="vehicule">choisir le type de vehicule</label>
+            <label class="label-1">choisir le type de vehicule</label>
             <select class="select-1" id="select-1">
                 <option value="Choix">Choix</option>
                 <option id="moto" value="10">Moto</option>
@@ -43,10 +42,9 @@
                 <option id="engin" value="900">Engin de chantier</option>
                 <option id="camion" value="250">Camion</option>
             </select>
-            <br> 
             <label class="label-2" for="vehicule_type">Fuel</label>
             <select class="select-2" id="select-2">
-                <option value=""></option>
+                <option value="0"></option>
                 <option id="electrique" value="0.05">Electrique</option>
                 <option id="hybride" value="0.09">Hybride</option>
                 <option id="essence" value="0.14">Essence</option>
@@ -58,9 +56,10 @@
                 <option id="auto" value="0.19">auto</option> 
                 <option id="manual" value="0">manual</option> 
             </select>
-            <Label>Numbre jour</Label>
+            <Label class="label-3">Numbre jour</Label>
             <input type="number" value="1" id="nbjour">
             <button id="button---1" >Submit</button>
+            <span id="total-1">Prix Total</span>
             <span id="total"></span>
     </div>
     <!-- end content -->

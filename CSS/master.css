@@ -551,33 +551,94 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
 }
-.Container form > .label-1 {
-  align-items: center;
+.Container .label-1 {
   font-weight: bold;
   font-size: 22px;
+  margin-top: 15px;
 }
-.Container form > .select-1 {
+.Container .select-1 {
   padding: 20px;
-  display: flex;
   border: 2px solid;
   border-radius: 15px;
   margin-top: 30px;
-  width: 100%;
+  width: 20%;
   text-align: center;
 }
-.Container form > .label-2 {
-  text-align: center;
+.Container .label-2 {
   font-weight: bold;
   font-size: 22px;
-  padding-left: 100px
 }
-.Container form > .select-2 {
+.Container .select-2 {
+  text-align: center;
   padding: 20px;
-  display: flex;
   border: 2px solid;
   border-radius: 15px;
   margin-top: 30px;
-  width: 100%;
+  width: 20%;
+}
+.Container .label-3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.Container #nbjour {
+  border: 2px solid;
+  border-radius: 15px;
+  margin-top: 30px;
+  width: 8%;
+  padding: 8px;
+  text-align: center;
+}
+.Container #button---1 {
+  border-radius: 15px;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  width: 8%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.Container #total {
+  font-weight: bold;
+  font-size: 16px;
+}
+.Container #total-1 {
+  font-weight: bold;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .Container .label-1 {
+    font-size: 16px;
+  }
+  .Container .select-1 {
+    padding: 14px;
+    width: 50%;
+  }
+  .Container .label-2 {
+    font-size: 16px;
+  }
+  .Container .select-2 {
+    padding: 14px;
+    width: 40%;
+  }
+  .Container .label-3 {
+    font-size: 14px;
+  }
+  .Container #nbjour {
+    width: 20%;
+  }
+  .Container #button---1 {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .Container #total {
+    font-size: 10px;
+  }
+  .Container #total-1 {
+    font-size: 10px;
+  }
 }
 /* end Reservation */

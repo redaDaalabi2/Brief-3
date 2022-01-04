@@ -37,13 +37,15 @@
 // Moto.addEventListener("click" , function() {
 //     console.log("hello");
 // })
-let nbjour=document.getElementById("nbjour")
+let nbjour = document.getElementById("nbjour")
 let select1 = document.querySelector("#select-1");
-let select2 = document.getElementById("select-2");
+let select2 = document.querySelector("#select-2");
 let Electrique = document.querySelector("#electrique");
 let Hybride = document.querySelector("#hybride");
 let Essence = document.querySelector("#essence");
 let Diesel = document.querySelector("#diesel");
+let Autor = document.querySelector("#auto");
+let Manual = document.querySelector("#manual");
 select1.addEventListener("change" , function() {
     let SelectText = select1.options[select1.selectedIndex].text;
     console.log( "text : " + SelectText);
@@ -97,6 +99,20 @@ select1.addEventListener("change" , function() {
       document.getElementById("diesel").style.display="block";
     }
 })
+// select2.addEventListener("change" , function() {
+//   let SlctTxt = select2.options[select2.selectedIndex].text;
+//   console.log( "text : " + SlctTxt);
+//   if(SlctTxt === "Electrique" || SlctTxt === "Essence")
+//   {
+//     document.getElementById("auto").style.display="none";
+//     document.getElementById("manual").style.display="none";
+//   }
+//   // if(SlctTxt === "Electrique" || SlctTxt === "Hybride"|| SlctTxt === "Essence" || SlctTxt === "Diesel")
+//   // {
+//   //   document.getElementById("auto").style.display="none";
+//   //   document.getElementById("manual").style.display="block";
+//   // }
+// })
 document.getElementById("button---1").addEventListener("click",function() {{
   let nbjour=document.getElementById("nbjour").value;
   var valType=document.getElementById("select-1").value;
@@ -106,6 +122,6 @@ document.getElementById("button---1").addEventListener("click",function() {{
   var valGear=document.getElementById("select-3").value;
   var total=0;
   total+=(parseFloat(valType)+(parseFloat(valType)*parseFloat(valFuel))+(parseFloat(valType)*parseFloat(valGear)))*nbjour;
-  console.log( total );
+  console.log( total);
   document.getElementById("total").innerHTML=total;
 }})
